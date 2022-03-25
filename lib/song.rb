@@ -4,8 +4,7 @@ class Song
   @@count = 0
   @@genres = []
   @@artists = []
-  # 
-  # 
+ 
 
   def initialize(name, artist, genre)
     @name = name
@@ -39,7 +38,7 @@ class Song
         genre_count[genre] += 1
       else
         genre_count[genre] = 1
-        # we place genre in [] to refer to that particular genre in this each loop, rather than :genre as the instance variable
+        # looking at each genre in @@genres hash.  For every match of a genre, we increment the count of that particular genre in genre_count.  
       end
     end
     genre_count
